@@ -19,3 +19,5 @@ BOT_TOKEN="API_TOKEN" GUILD_ID="GUILD_ID" ./guild-backup
   - Audit log
   - Attachments (maybe discord CDN should keep them forever)
 - Restore backup?
+- Better async
+  - Download multiple channels at same time
