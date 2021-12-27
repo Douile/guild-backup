@@ -1,0 +1,23 @@
+[package]
+name = "guild-backup"
+description = "Download all text messages sent in a discord guild using the HTTP API"
+readme = "README.md"
+authors = [ "Douile <25043847+Douile@users.noreply.github.com>" ]
+homepage = "https://github.com/Douile/guild-backup"
+repository = "https://github.com/Douile/guild-backup"
+categories = [ "command-line-utilities" ]
+license = "MIT"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "1"
+simd-json = "0.4"
+tokio = { version = "1", features= [ "full" ] }
+#twilight-http = { version = "0.8", default-features = false, features= [ "decompression", "simd-json", "native", "tracing" ] }
+#twilight-model = "0.8"
+twilight-http = { git = "https://github.com/zeylahellyer/twilight", branch = "fix-http-path-active-threads", default-features = false, features= [ "decompression", "simd-json", "native", "tracing" ] }
+twilight-model = { git = "https://github.com/zeylahellyer/twilight", branch = "fix-http-path-active-threads" }  
+tracing-log = "0.1"
