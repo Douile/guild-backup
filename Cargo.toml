@@ -18,6 +18,5 @@ simd-json = "0.4"
 tokio = { version = "1", features= [ "full" ] }
 #twilight-http = { version = "0.8", default-features = false, features= [ "decompression", "simd-json", "native", "tracing" ] }
 #twilight-model = "0.8"
-twilight-http = { git = "https://github.com/zeylahellyer/twilight", branch = "fix-http-path-active-threads", default-features = false, features= [ "decompression", "simd-json", "native", "tracing" ] }
+twilight-http = { git = "https://github.com/zeylahellyer/twilight", branch = "fix-http-path-active-threads", default-features = false, features= [ "decompression", "simd-json", "native" ] }
 twilight-model = { git = "https://github.com/zeylahellyer/twilight", branch = "fix-http-path-active-threads" }  
-tracing-log = "0.1"

@@ -92,8 +92,6 @@ async fn fetch_archived_threads(
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    tracing_log::LogTracer::init()?;
-
     let bot_token = env::var("BOT_TOKEN")?;
     let guild_id =
         GuildId::new(u64::from_str_radix(&env::var("GUILD_ID")?, 10)?).expect("Invalid guild ID");
